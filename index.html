@@ -62,7 +62,7 @@ function render(){
      '<div class="station-num">REQUEST '+(current+1)+' / '+stations.length+'</div>'+
      '<span class="badge">'+(is?'✓ REQUESTED':'RADIO REQUEST')+'</span>'+
      '<h3>'+s.name+'</h3><p class="desc">'+s.desc+'</p>'+
-     (current===0?'<div class="actions"><a class="btn secondary" href="https://usen.oshireq.com/campaign/unext" target="_blank" rel="noopener">U-NEXTボーナスはこちら →</a><a class="btn secondary" href="https://usen.oshireq.com/" target="_blank" rel="noopener">USENでEscapeを検索 →</a></div><p class="note">※U-NEXTボーナスはU-NEXT会員限定。進捗には含まれません。</p>':'')+
+     (current===0?'<div class="actions"><a class="btn secondary" href="https://usen.oshireq.com/campaign/unext" target="_blank" rel="noopener">U-NEXTボーナスはこちら →</a></div><p class="note">※U-NEXTボーナスはU-NEXT会員限定。進捗には含まれません。</p>':'')+
      '<a class="btn primary" href="'+s.url+'" target="_blank" rel="noopener" onclick="mark(\''+s.id+'\')">公式フォームを開く →</a>'+
      '<div class="pager">'+
      '<button class="btn secondary" onclick="goTo('+Math.max(0,current-1)+')" '+(current===0?'disabled':'')+'>← 戻る</button>'+
